@@ -2,15 +2,16 @@
 import "../styles/global.css";
 import Metas from "./seo/Metas.astro";
 const {
-  title = "Lexington Starter",
-  description = "#",
+  title = "Filarmónica Artística Pombalense",
+  description = "A Filarmónica Artística Pombalense é uma associação cultural e recreativa que tem como objetivo a promoção e divulgação da música e da cultura em geral",
   url,
   socialImage = "/social-preview-image.png",
   twitterImage = "/twitter-preview-image.png", // Assuming you have a separate image for Twitter
-  author = "Lexington Themes",
+  author = "Daniel Machado",
 } = Astro.props;
 const sanitizedTitle = title.toLowerCase().replaceAll(" ", "-");
 ---
+
 <Metas
   title={title}
   description={description.substring(0, 100)}
@@ -28,7 +29,10 @@ const sanitizedTitle = title.toLowerCase().replaceAll(" ", "-");
   href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@1,2&display=swap"
   rel="stylesheet"
 />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+  rel="stylesheet"
+/>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
